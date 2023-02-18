@@ -1,20 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 *{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+h1 {
+    text-align: center;
+    background-color: #28253d; 
+    color: #9954b9;
+    padding: 10px;
+    
+}
 .container{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, #93C572 70%, #C8EBB1 30%);
-    position: relative;
+    background: linear-gradient(to right, #9954b9 80%, #997dbc 20%);
+    position: absolute;
     overflow: hidden;
 }
 .wave{
+    height: 190vh;
     position: absolute;
-    top:0;
-    right: 30%;
+    top: 0;
+    right: 10%;
 }
 nav{
     width:90%;
@@ -36,7 +44,7 @@ nav ul li a{
     padding: 0.3rem 1.3rem;
     font-size: 17px;
     font-weight: bold;
-    color: #494234;
+    color:#28253d; 
     position: relative;
     z-index: 1;
 }
@@ -48,7 +56,7 @@ nav ul li a::after{
     top: 0;
     left: 0;
     border-radius: 20px;
-    background-color: #C8EBB1;
+    background-color: #997dbc;
     z-index: -1;
     transition: 0.5s;
 }
@@ -56,26 +64,76 @@ nav ul li a:hover:after{
     width: 100%;
 }
 .main-content{
-    width: 60%;
-    padding-top: 100px;
-    margin-left: 3rem;
+    width: 64%;
+    padding-top: 60px;
+    margin-left: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .image-pista, .main-text{
     flex-basis: 50%;
+    margin-top: -2rem;
 } 
 .image-pista img{
-    width: 100%;  
+    width: 88%;  
+    margin-top: 7rem;
 }
 .main-content h1{
-    font-size: 60px;
+    background-color: #9954b9;
+    font-size: 80px;
     letter-spacing: 1px;
-    color: #494234;
+    color:#28253d; 
 }
 .main-content p{
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 6px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
+.main-content button{
+    margin-top: 4rem;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 50% 50% 50% 50%;
+    background-color:rgb(39, 14, 94);
+    color:antiquewhite;
+    cursor: pointer;
+}
+.swiper{
+    width: 25rem;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: content;
+}
+.right{
+    position:absolute;
+    right: 1px;
+    bottom:80%;
+    left: 80%;
+}
+.box .inner-box{
+    margin: 1,5rem 0 0 1.5rem;
+}
+.box .inner-box p{
+    font-size: 6px;
+    font-weight: 300;
+}
+.right h3{
+    background-color: #997dbc;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color:#28253d; 
+    position:center;
+}
+.right p{
+    background-color: #997dbc;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color:#28253d; 
+    position:center;
+}
+

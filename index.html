@@ -5,34 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+ rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <h1>Rabbits.com</h1>
     <div class="container">
         <div class="wave">
-            <img src="bg.png" alt="">
+            <img src="imagenes/wave.png" alt="">
         </div>
 
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">PLAY</a></li>
-                <li><a href="#">Our game</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Get to know us</a></li>
+                <li><a href="#">Objetivo</a></li>
             </ul>
         </nav>
  
         <div class="main-content">
-            <div class="image-nimi0">
-                <img src="0.png" alt="">
-        </div>
-        <div class="main-text">
-            <h1>Mellow Lands</h1>
-            <p>Un juego para relajarte y pasar un buen rato en tu granja </p>
-            <button>Consulta mas</button>
+            <div class="image-pista">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="imagenes/roca.png" alt=""></div>
+                        <div class="swiper-slide"><img src="imagenes/nave.png" alt=""></div>
+                        <div class="swiper-slide"><img src="imagenes/explosion.png" alt=""></div>
+                    </div>    
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>Asteroid Smash</h1>
+                <p>Destruye los asteroides para evitar que lleguen a la tierra y opten la mayor cantidad de puntos destruyendolos.</p>
+                <p>Nuestra empresa ha creado este videojuego con la finalidad de un buen entretenimiento para todos.</p>
+                <button>Conoce mas</button>
         </div>
 
+        <div class="right">
+             <div class="inner-box">
+                 <h3>Sobre nuestra Compania</h3>
+                <p>Nuestro equipo esta conformado por:.....</p>
+             </div>
+        </div>
     </div>
+    <script> src="https://unpkg.com/swiper@8/swiper-bundle.min.js"</script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerview: 3,
+          spaceBetween: 30,
+          loop: true,
+        });
+    </script>
 </body>
+
 </html>
