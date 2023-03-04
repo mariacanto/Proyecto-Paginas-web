@@ -12,6 +12,24 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+.links{
+    background-color: #f5576c;
+    background-position: center;
+    flex-direction: row;
+    background-attachment: fixed;
+}
+
+.textos-links{
+    height: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
 .hero{
     background-image: linear-gradient(120deg, rgba(191, 153, 225, 0.852) 0%, #86b3e2e3 70%), url(imagenes/fondo1si.png);
     width: 100%;
@@ -22,6 +40,7 @@ body{
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .textos-hero{
@@ -31,10 +50,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.textos-links a{
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    justify-content:center;
 }
 
 .textos-hero h1{
     font-size: 60px;
+    flex-direction: column;
 }
 
 .textos-hero h2{
@@ -49,6 +79,8 @@ body{
     background: #a18cd1;
     border-radius: 8px;
     border-radius: #fff;
+    flex-direction: row;
+    text-align: center;
 }
 
 .svg-hero{
@@ -57,7 +89,6 @@ body{
     left: 0;
     width: 100%;
 }
-
 
 
 .contenedor,
@@ -71,11 +102,19 @@ body{
 
 .contenedor{
     padding: 70px 0;
+    font-size: medium;
+    text-align: center;
+}
+
+.contenedor h2{
+    font-size: 43px;
+    text-align: center;
 }
 
 .titulo{
     font-weight: 300;
-    font-size: 35px;
+    font-size: 60px;
+    color: rgb(14, 38, 38) ;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -240,3 +279,47 @@ input[type="submit"]:hover{
     background-color: #fff;
 
 }
+
+/* Get To Know Us */
+.titulo-GetToKnowUs {
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+.contenido-GetToKnowUs{
+    text-align: center;
+    font-size: 25px;
+}
+
+/* PLAY */
+.titulo-Juego {
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+.contenido-Juego {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Asteroid Smash*/
+.titulo-AsteroidSmash {
+    text-align: center;
+    font-size: 55px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+.contenido-AsteroidSmash {
+    text-align: center;
+    font-size: 25px;
+}
+
+
