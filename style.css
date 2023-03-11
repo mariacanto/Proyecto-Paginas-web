@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -8,12 +9,13 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+.BODYINDEX{
     font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
 }
 
 .links{
-    background-color: #f5576c;
+    background-color: #033E8C;
     background-position: center;
     flex-direction: row;
     background-attachment: fixed;
@@ -24,14 +26,18 @@ body{
     color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    justify-content:space-between;
+    padding-left: 500px;
+    padding-right: 500px;
+  
 }
+
 .hero{
-    background-image: linear-gradient(120deg, rgba(191, 153, 225, 0.852) 0%, #86b3e2e3 70%), url(imagenes/fondo1si.png);
+    background-image: linear-gradient(#79b2fd 5%, #022859 80%);
     width: 100%;
     height: 650px;
     background-repeat: no-repeat;
@@ -51,6 +57,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 20px;
 }
 
 .textos-links a{
@@ -63,24 +70,28 @@ body{
 }
 
 .textos-hero h1{
-    font-size: 60px;
+    font-size: 95px;
     flex-direction: column;
+    font-family: 'Outfit', sans-serif;
 }
 
-.textos-hero h2{
-    font-size: 25px;
+.textos-hero p{
+    font-size: 35px;
     margin-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
 }
 
-.text-hero a{
+.textos-hero a{
     display: inline-block;
     text-decoration: none;
-    padding: 12px 15px;
-    background: #a18cd1;
+    padding: 10px 12px;
+    background: #519bfb;
     border-radius: 8px;
     border-radius: #fff;
     flex-direction: row;
     text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
 }
 
 .svg-hero{
@@ -148,15 +159,17 @@ body{
 .cta{
     display: inline-block;
     text-decoration: none;
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-image: linear-gradient(45deg, #0448a1 0%, #7c9ac2 99%, #519bfb 100%);
     padding: 12px 15px;
     border-radius: 8px;
     color: #fff
 }
 
 .info{
-    background: #f5576c;
+    background: #b2d3fe;
     color: #fff;
+    border-width: 2px;
+    border-color: #022859;
 }
 
 .content-cards{
@@ -183,7 +196,7 @@ body{
 
 .card i{
     margin: 30px 0 20px 0;
-    color: #cc9199;
+    color: #022859;
     font-size: 50px;
 }
 
@@ -194,7 +207,7 @@ body{
 }
 
 .galeria{
-    background: #f2f2f2
+    background: #b2d3fe
 }
 
 .galeria-cont{
@@ -206,9 +219,9 @@ body{
 }
 
 .galeria-cont>img{
-    width: 30%;
+    width: 35%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display:block;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
     cursor: pointer;
@@ -219,7 +232,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .last-section img{
@@ -231,7 +244,7 @@ body{
 }
 
 footer{
-    background: #f5576c;
+    background: #5ba1fb;
     color: #fff;
 }
 
@@ -259,7 +272,7 @@ input[type="text"],
 input[type="email"]{
     display: inline-block;
     width: 49%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .form textarea{
@@ -281,18 +294,82 @@ input[type="submit"]:hover{
 }
 
 /* Get To Know Us */
+
+.BODYGTKU{
+    background-color: #b2d3fe; 
+}
+
+.GetToKnowUs {
+    background-color: #b2d3fe;
+}
+
 .titulo-GetToKnowUs {
     text-align: center;
     font-size: 55px;
-    padding-bottom: 10px;
+    padding-bottom:20px;
     padding-top: 10px;
+    font-family: 'Manrope', sans-serif;
     
 }
 
 .contenido-GetToKnowUs{
     text-align: center;
     font-size: 25px;
+    padding-bottom:13px;
+    font-family: 'Archivo', sans-serif;
+
 }
+
+.rowgtku {
+    margin: 10px -16px;
+    background-color: #b2d3fe;
+   
+}
+
+.rowgtku, .rowgtku > .columnGTKU{
+    padding: 10px;
+    background-color: #b2d3fe;
+}
+
+.columnGTKU{
+    float: left;
+    width: 33.33%;
+    background-color: #b2d3fe;
+
+}
+
+.cont-column-gtku{
+    background-color: #79b2fd;
+    box-shadow: 4px 9px 9px #022859 ;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+
+}
+
+.cont-column-gtku h4{
+    color: #011633;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.cont-column-gtku p{
+    color: #000813;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center
+
+}
+
+.cont-column-gtku h4, .cont-column-gtku p{
+    padding: 10px;
+
+}
+
+
+
 
 /* PLAY */
 .titulo-Juego {
@@ -301,6 +378,7 @@ input[type="submit"]:hover{
     padding-bottom: 10px;
     padding-top: 10px;
     
+    
 }
 
 .contenido-Juego {
@@ -308,12 +386,22 @@ input[type="submit"]:hover{
     font-size: 25px;
 }
 
+.BODYPLAY{
+    background-color: #b2d3fe;
+}
+
 /* Asteroid Smash*/
+
+.BODYASS{
+    background-color: #b2d3fe;
+}
+
 .titulo-AsteroidSmash {
     text-align: center;
     font-size: 55px;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 26px;
+    font-family: 'Manrope', sans-serif;
     
 }
 
@@ -321,5 +409,4 @@ input[type="submit"]:hover{
     text-align: center;
     font-size: 25px;
 }
-
 
