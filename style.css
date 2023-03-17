@@ -22,7 +22,7 @@ html{
 }
 
 .textos-links{
-    height: 30px;
+    height: 60px;
     color: #fff;
     display: flex;
     flex-direction: row;
@@ -31,8 +31,10 @@ html{
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     justify-content:space-between;
+    padding-top: 12px;
     padding-left: 500px;
     padding-right: 500px;
+    font-family: 'Signika', sans-serif;
   
 }
 
@@ -70,9 +72,10 @@ html{
 }
 
 .textos-hero h1{
-    font-size: 95px;
+    font-size: 70px;
     flex-direction: column;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+
 }
 
 .textos-hero p{
@@ -101,7 +104,6 @@ html{
     width: 100%;
 }
 
-
 .contenedor,
 .wave-contenedor{
     width: 90%;
@@ -109,6 +111,7 @@ html{
     overflow: hidden;
     margin: auto;
     padding: 0 0 80px 0;
+    
 }
 
 .contenedor{
@@ -120,6 +123,7 @@ html{
 .contenedor h2{
     font-size: 43px;
     text-align: center;
+    font-family: 'Signika', sans-serif;
 }
 
 .titulo{
@@ -296,80 +300,17 @@ input[type="submit"]:hover{
 /* Get To Know Us */
 
 .BODYGTKU{
-    background-color: #b2d3fe; 
+    background-color: #ffffff; 
 }
 
-.GetToKnowUs {
-    background-color: #b2d3fe;
+.imagecard{
+    border-radius: 50%;
 }
 
-.titulo-GetToKnowUs {
-    text-align: center;
-    font-size: 55px;
-    padding-bottom:20px;
-    padding-top: 10px;
-    font-family: 'Manrope', sans-serif;
-    
-}
-
-.contenido-GetToKnowUs{
-    text-align: center;
-    font-size: 25px;
-    padding-bottom:13px;
-    font-family: 'Archivo', sans-serif;
+.card-img .imagecard{
+    border-radius: 50%;
 
 }
-
-.rowgtku {
-    margin: 10px -16px;
-    background-color: #b2d3fe;
-   
-}
-
-.rowgtku, .rowgtku > .columnGTKU{
-    padding: 10px;
-    background-color: #b2d3fe;
-}
-
-.columnGTKU{
-    float: left;
-    width: 33.33%;
-    background-color: #b2d3fe;
-
-}
-
-.cont-column-gtku{
-    background-color: #79b2fd;
-    box-shadow: 4px 9px 9px #022859 ;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: 'Archivo', sans-serif;
-
-}
-
-.cont-column-gtku h4{
-    color: #011633;
-    margin: 0;
-    font-size: 30px;
-    text-align: center;
-
-}
-
-.cont-column-gtku p{
-    color: #000813;
-    margin-top: 0;
-    font-size: 20px;
-    text-align: center
-
-}
-
-.cont-column-gtku h4, .cont-column-gtku p{
-    padding: 10px;
-
-}
-
-
-
 
 /* PLAY */
 .titulo-Juego {
@@ -393,20 +334,171 @@ input[type="submit"]:hover{
 /* Asteroid Smash*/
 
 .BODYASS{
-    background-color: #b2d3fe;
+   overflow-x: hidden;
+
 }
 
-.titulo-AsteroidSmash {
-    text-align: center;
-    font-size: 55px;
-    padding-bottom: 10px;
-    padding-top: 26px;
-    font-family: 'Manrope', sans-serif;
+.section-ass{
+    background-color: #ffffff;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.banner1, .banner2, .banner3, .banner4{
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    left: 180px;
+    top: 60px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.img-banner{
+    width: 672px;
+    height: 1200px;
+    position:relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 25px;
+}
+
+.text-boxass{
+    width: 500px;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    color: #fff;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+}
+
+.text-boxass h1{
+    margin-bottom: 40px;
     
 }
 
-.contenido-AsteroidSmash {
-    text-align: center;
-    font-size: 25px;
+.text-boxass p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+    
+}
+
+.text-boxass span{
+    background: #7c9ac2;
+    height: 3px;
+    width: 130px;
+    position: absolute;
+    left:0;
+}
+
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.text-boxass1{
+    animation-delay: 0s;
+}
+.text-boxass2{
+    animation-delay: 3s;
+}
+.text-boxass3{
+    animation-delay: 6s;
+}
+.text-boxass4{
+    animation-delay: 9s;
+}
+
+.footerdelass{
+    padding-top: 1250px;
 }
 
