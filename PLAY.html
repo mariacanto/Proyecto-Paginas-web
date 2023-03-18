@@ -1,24 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Landing Page | Our Company </title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap" rel="stylesheet">
+<html>
+  <head>
+    <title>Videojuego simple de nave</title>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="BODYPLAY">
+  </head>
 
   <header class="links">
     <div class="textos-links">
@@ -29,30 +15,65 @@
   </div>
   </header>
 
-  <section class="infoP">
-    <h2 class="titulo-Juego">Inserta el Juego Super Genial</h2>
-    <div class="contenido-Juego"> 
-      <p>Destruye los asteroides para evitar que lleguen a la tierra y opten la mayor cantidad de puntos destruyendolos.</p>
-    </div>
+  <body>
+    <canvas id="game" width="800" height="600"></canvas>
+    <script>
+      // Obtener el contexto del canvas
+      var canvas = document.getElementById("game");
+      var ctx = canvas.getContext("2d");
 
-  </section>
-</body>
+      // Definir el tamaño de la pantalla
+      var screenWidth = canvas.width;
+      var screenHeight = canvas.height;
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE-edge">
- <meta name="viewsport" content="width=device-width, intial scale=1.0">
- <link rel="stylesheet"  href="stylejuego.css"
- <title> juego en js </title>
-</head>
-<body>
-    <span id="lives">Lives:<i>5</i></span>
-    <span id="times"></span>
-    <div class="nave" id="nave"></div>
-    <audio src="" id="laser"></audio>
-    <audio src="" id="explosion"></audio>
-    <script src=""></script>
-</body>
+      // Crear los elementos del juego
+      var ship = {
+        x: screenWidth / 2 - 25,
+        y: screenHeight - 50,
+        width: 50,
+        height: 50,
+        speed: 5
+      };
+
+      // Actualizar el estado del juego
+      function update() {
+        // Mover la nave
+        if (keys["ArrowLeft"] && ship.x > 0) {
+          ship.x -= ship.speed;
+        } else if (keys["ArrowRight"] && ship.x + ship.width < screenWidth) {
+          ship.x += ship.speed;
+        }
+      }
+
+      // Dibujar los elementos del juego
+      function draw() {
+        // Dibujar el fondo
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, screenWidth, screenHeight);
+
+        // Dibujar la nave
+        ctx.fillStyle = "blue";
+        ctx.fillRect(ship.x, ship.y, ship.width, ship.height);
+      }
+
+      // Actualizar y dibujar el juego
+      function gameLoop() {
+        update();
+        draw();
+        requestAnimationFrame(gameLoop);
+      }
+
+      // Detectar las teclas presionadas
+      var keys = {};
+      document.addEventListener("keydown", function(event) {
+        keys[event.code] = true;
+      });
+      document.addEventListener("keyup", function(event) {
+        keys[event.code] = false;
+      });
+
+      // Iniciar el juego
+      gameLoop();
+    </script>
+  </body>
 </html>
