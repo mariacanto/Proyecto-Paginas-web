@@ -14,8 +14,10 @@ html{
     background-color: #ffffff;
 }
 
+/*------------------------------------------------------*/
+
 .links{
-    background-color: #033E8C;
+    background-color: #022859;
     background-position: center;
     flex-direction: row;
     background-attachment: fixed;
@@ -37,6 +39,8 @@ html{
     font-family: 'Signika', sans-serif;
   
 }
+
+/*------------------------------------------------------*/
 
 .hero{
     background-image: linear-gradient(#79b2fd 5%, #022859 80%);
@@ -102,7 +106,10 @@ html{
     bottom: 0;
     left: 0;
     width: 100%;
+    
 }
+
+/*------------------------------------------------------*/
 
 .contenedor,
 .wave-contenedor{
@@ -113,6 +120,8 @@ html{
     padding: 0 0 80px 0;
     
 }
+
+/*------------------------------------------------------*/
 
 .contenedor{
     padding: 70px 0;
@@ -160,6 +169,8 @@ html{
     margin-bottom: 20px;
 }
 
+/*------------------------------------------------------*/
+
 .cta{
     display: inline-block;
     text-decoration: none;
@@ -169,12 +180,27 @@ html{
     color: #fff
 }
 
+/*------------------------------------------------------*/
+
 .info{
-    background: #b2d3fe;
+    background: #022859;
     color: #fff;
     border-width: 2px;
     border-color: #022859;
 }
+
+.info-pt2{
+    background: #022859;
+    color: #fff;
+    border-width: 2px;
+    border-color: #022859;
+    border-width: 2px;
+    height: 70px;
+}
+
+
+
+/*------------------------------------------------------*/
 
 .content-cards{
     display: flex;
@@ -210,27 +236,16 @@ html{
     margin-bottom: 10px;
 }
 
-.galeria{
-    background: #b2d3fe
+.cards h2{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 60px;
+    padding-bottom: 15px;
 }
 
-.galeria-cont{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    overflow: hidden;
-}
+/*------------------------------------------------------*/
 
-.galeria-cont>img{
-    width: 35%;
-    object-fit: cover;
-    margin-bottom: 30px;
-    display:block;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
-    cursor: pointer;
-    overflow: hidden;
-}
+
+/*------------------------------------------------------*/
 
 .last-section{
     display: flex;
@@ -247,8 +262,10 @@ html{
     width: 40%;
 }
 
+/*------------------------------------------------------*/
+
 footer{
-    background: #5ba1fb;
+    background: #7c9ac2;
     color: #fff;
 }
 
@@ -296,46 +313,203 @@ input[type="submit"]:hover{
     background-color: #fff;
 
 }
+/*--------------------------------------------------------------*/
 
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: #ffffff;
+}
+
+.wrapper{
+    max-width: 1200px ;
+}
+
+.wrapper .carousel{
+    font-size: 0px;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden ;
+}
+
+.carousel img{
+    height: 250px;
+    width: calc(100% / 3) ;
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+.wrapper h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/*--------------------------------------------------------------*/
 /* Get To Know Us */
-
 .BODYGTKU{
-    background-color: #ffffff; 
+    overflow: hidden;
 }
 
-.imagecard{
+.containerGTKU{
+    max-width: 950px;
+    background-color: #7c9ac2;
+    width: 100%;
+    padding: 40px 0;
+    overflow-x: hidden;
+    padding-bottom: 270px;
+}
+
+.containerGTKU .main-card-gtku{
+    width: 200%;
+    background: #7c9ac2;
+    display: flex;
+}
+
+.titulogtku h1{
+    text-align: center;
+    padding-top: 25px;
+    background: #7c9ac2;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 60px;
+}
+
+.details-gtku p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    padding-top: 6px;
+}
+
+.details-gtku{
+    display:block;
+    justify-content:space-between;
+    padding: 5px;
+    
+}
+
+.SECTIONGTKU{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7c9ac2;
+}
+
+.cards-gtku{
+    align-items: center;
+    justify-content: center;
+}
+
+.main-card-gtku{
+    display: flex;
+    padding-right: 55px;
+}
+
+.main-card-gtku .cards-gtku{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.main-card-gtku .cards-gtku .card-gtku{
+    background: #ffffff;
+    width: calc(100% / 3 - 10px);
+    padding: 30px;
+    border-radius: 24px;
+}
+
+.cards-gtku .card-gtku .contenido-gtku{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards-gtku .card-gtku .contenido-gtku .img-gtku{
+    height:130px;
+    width: 130px;
+    margin-bottom: 24px;
+    background:#033E8C;
+    padding: 3px;
     border-radius: 50%;
 }
 
-.card-img .imagecard{
+.card-gtku .contenido-gtku .img-gtku img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
     border-radius: 50%;
-
+    border: 3px solid #ffffff;
 }
 
+.card-gtku .contenido-gtku .details-gtku .name-gtku{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-gtku .contenido-gtku .details-gtku .job-gtku{
+    font-size: 20px;
+    color:#5ba1fb;
+}
+
+.card-gtku .contenido-gtku .media-icons-gtku{
+    display: flex;
+    margin-top: 10px;
+}
+
+.card-gtku .contenido-gtku .media-icons-gtku a{
+    height: 35px;
+    width: 35px;
+    color: #ffffff;
+    background: #5ba1fb;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.contenido-gtku .media-icons-gtku a:hover{
+    border-color: #5ba1fb;
+    color:#5ba1fb;
+    background: #ffffff;
+}
+
+/*--------------------------------------------------------------*/
 /* PLAY */
+.BODYPLAY{
+    background-color: #b2d3fe;
+}
 .titulo-Juego {
     text-align: center;
     font-size: 55px;
     padding-bottom: 10px;
     padding-top: 10px;
-    
-    
 }
 
 .contenido-Juego {
     text-align: center;
     font-size: 25px;
 }
+/*--------------------------------------------------------------*/
 
-.BODYPLAY{
-    background-color: #b2d3fe;
-}
 
+/*--------------------------------------------------------------*/
 /* Asteroid Smash*/
-
 .BODYASS{
    overflow-x: hidden;
-
 }
 
 .section-ass{
@@ -377,13 +551,15 @@ input[type="submit"]:hover{
 
 .text-boxass h1{
     margin-bottom: 40px;
-    
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
 }
 
 .text-boxass p{
-    font-size: 14px;
+    font-size: 20px;
     line-height: 18px;
     margin-top: 80px;
+    font-family: 'Outfit', sans-serif;
     
 }
 
@@ -501,4 +677,5 @@ input[type="submit"]:hover{
 .footerdelass{
     padding-top: 1250px;
 }
+/*--------------------------------------------------------------*/
 
