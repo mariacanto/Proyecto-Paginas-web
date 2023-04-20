@@ -15,65 +15,19 @@
   </div>
   </header>
 
-  <body>
-    <canvas id="game" width="800" height="600"></canvas>
-    <script>
-      // Obtener el contexto del canvas
-      var canvas = document.getElementById("game");
-      var ctx = canvas.getContext("2d");
-
-      // Definir el tamaño de la pantalla
-      var screenWidth = canvas.width;
-      var screenHeight = canvas.height;
-
-      // Crear los elementos del juego
-      var ship = {
-        x: screenWidth / 2 - 25,
-        y: screenHeight - 50,
-        width: 50,
-        height: 50,
-        speed: 5
-      };
-
-      // Actualizar el estado del juego
-      function update() {
-        // Mover la nave
-        if (keys["ArrowLeft"] && ship.x > 0) {
-          ship.x -= ship.speed;
-        } else if (keys["ArrowRight"] && ship.x + ship.width < screenWidth) {
-          ship.x += ship.speed;
-        }
-      }
-
-      // Dibujar los elementos del juego
-      function draw() {
-        // Dibujar el fondo
-        ctx.fillStyle = "black";
-        ctx.fillRect(0, 0, screenWidth, screenHeight);
-
-        // Dibujar la nave
-        ctx.fillStyle = "blue";
-        ctx.fillRect(ship.x, ship.y, ship.width, ship.height);
-      }
-
-      // Actualizar y dibujar el juego
-      function gameLoop() {
-        update();
-        draw();
-        requestAnimationFrame(gameLoop);
-      }
-
-      // Detectar las teclas presionadas
-      var keys = {};
-      document.addEventListener("keydown", function(event) {
-        keys[event.code] = true;
-      });
-      document.addEventListener("keyup", function(event) {
-        keys[event.code] = false;
-      });
-
-      // Iniciar el juego
-      gameLoop();
-    </script>
-  </body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewsport" content="width=device-width, intial scale=1.0">
+    <link rel="stylesheet"  href="stylejuego.css"
+    <title> juego en js </title>
+   </head>
+   <body>
+       <span id="lives">Lives:<i>5</i></span>
+       <span id="times"></span>
+       <div class="nave" id="nave"></div>
+       <audio src="" id="laser"></audio>
+       <audio src="" id="explosion"></audio>
+       <script src=""></script>
+   </body>
+   </html>
