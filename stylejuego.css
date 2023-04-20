@@ -23,6 +23,7 @@ body{
     width: 100vw;
     overflow: hidden;
 }
+<<<<<<< Updated upstream
 .bala{
     width: 10px;
     height: 50px;
@@ -31,3 +32,47 @@ body{
     box-shadow: 0px 0px 40px 10px #0ff;
     position: absolute;
 }
+=======
+
+
+    .bala{
+        width: 10px;
+        height: 50px;
+        background-color: rgb(rgb(255, 230, 0), green, blue);
+        border-radius: 15px;
+        box-shadow: 0px 0px 40px 10px #0ff;
+        position: absolute;
+    }
+
+    .enemigo{
+        width: 80px;
+        height: 50px;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+    }
+
+    #lives{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 2em;
+        color: rgb(255, 230, 0);
+    }
+    i{
+        color: red;
+    }
+
+    #times{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2em;
+        color: lightcoral;
+    }
+
+
+
+>>>>>>> Stashed changes
