@@ -1,11 +1,7 @@
 let nave=document.querySelector(".nave");
-let body=document.querySelector("body");{
+let body=document.querySelector("body");
 document.addEventListener("mousemove",(e)=>{
-<<<<<<< Updated upstream
     nave.stylejuego.left=(e.clientX-40)+"px";
-=======
-    nave.stylejuego.left=e.clientX+"px";
->>>>>>> Stashed changes
 });
 //generar disparo
 document.addEventListener("click" ,()=>{
