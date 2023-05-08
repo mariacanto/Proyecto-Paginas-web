@@ -34,9 +34,25 @@ body{
 .enemigo {
     width: 80px;
     height: 50px;
-    background-image: url();
+    background-image: url("imagesjuego/asteroide.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
+}
+#lives{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    color:rgb(245,222,19);
+}
+i{
+    color:red;  
+}
+#times{
+    position:absolute;
+    top:10px;
+    right: 10px;
+    font-size:2em;color:lightcoral;
 }
