@@ -1,6 +1,7 @@
 let nave=document.querySelector('.nave');
 let body=document.querySelector('body');
 let laser=document.getElementById('laser');
+let explosion=document.getElementById('explosion');
 let live=document.querySelector("i");
 let times= document.getElementById("times");
 let lives=5;
@@ -8,6 +9,10 @@ let second=60;
 setInterval(() => {
     second--;
     times.textContent=second;
+    if (second==0){
+        alert("You Win!");
+        location.reload();
+    }
 },1000)
 document.addEventListener('mousemove',(e)=> {
     nave.style.left=(e.clientX-40)+'px';
@@ -30,6 +35,31 @@ setInterval(()=>{;
         if (bala.getBoundingClientRect().top<=0){
             bala.remove();
         }
+   
+        //detectar las colisiones
+        let enemigos=document.querySelectorAll(".enemigo")
+
+        enemigos.forEach(enemigo => {
+            if(bala.getBoundingClientRect().top<=enemigo.
+            getBoundingClientRect().top+50){
+                if(bala.getBoundingClientRect().left>=enemigo.
+                getBoundingClientRect().left && bala.
+                getBoundingClientRect().left<=enemigo.
+                getBoundingClientRect().left+80){
+                    enemigo.style.backgroundImage=
+                    'url("imagesjuego/explosion.gif")';
+                    explosion.play();
+                    setTimeout(()=>{
+                       enemigo.remove();
+                       explosion.stop();
+                       
+                    },100);
+                    
+
+                }
+            }
+            
+        });
 
     });
 },100);  
@@ -52,6 +82,10 @@ setInterval(()=>{
         if (element.getBoundingClientRect().top>nave.
         getBoundingClientRect().top){
             lives--;
+            if (lives==-1){
+                alert("GAME OVER");
+                location.reload();
+            }
             live.textContent=lives;
             element.remove();
         }
